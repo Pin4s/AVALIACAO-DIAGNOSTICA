@@ -106,7 +106,7 @@
             echo "Produto $key: R$ $value<br>";
         }
 
-        if ($productTotalValue < 200) {
+        if ($productTotalValue > 200) {
             echo "<br>O valor total dos produtos é de R$ $productTotalValue, <br>portanto há um desconto de 10% sobre o valor total,<br> resultando em R$ " . ($productTotalValue * 0.9) . ".";
         } else {
             echo "<br>O valor total dos produtos é de R$ $productTotalValue, portanto não há desconto sobre o valor total.";
